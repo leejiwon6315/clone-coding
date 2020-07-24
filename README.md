@@ -1,2 +1,2 @@
-# study-of-opencv
-### opencv를 공부합니다.
+# BE-stduy
+### 백엔드 개발의 웹프로그래밍 공부를 합니다!
