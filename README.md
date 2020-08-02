@@ -4,4 +4,7 @@
 
 ## Contents
 + [movie_app_clone_coding](https://github.com/leejiwon6315/clone-coding/tree/master/movie_app_clone_coding)
+  리액트를 활용하여 제작한 영화 정보 웹사이트 입니다. API를 호출하여 영화 리스트를 작성했습니다.
+  
 + [vanilla.js-chrome-app-clone-coding](https://github.com/leejiwon6315/clone-coding-project/tree/master/Vanilla.js-chrome-app-clone-coding)
+  바닐라JS만을 활용하여 제작한 크롬 앱이며, ToDo 리스트 등을 작성 및 관리할 수 있는 일정관리 매니저 앱입니다.
