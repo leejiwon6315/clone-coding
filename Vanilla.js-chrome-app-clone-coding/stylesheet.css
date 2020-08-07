@@ -1,8 +1,31 @@
-.form,
-.greetings{
-    display: none;
+body {
+  background-color: #2c3e50;
 }
 
-.showing{
-    display: block;
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 120%;
+
+  z-index: -10;
+  animation: fadeIn 1s linear;
 }
