@@ -1,31 +1,171 @@
+@import "reset.css";
+
 body {
-   background-color: #2c3e50;
- }
+  font-family: sans-serif;
+  background-color: #2c3e50;
+}
 
- .form,
- .greetings {
-   display: none;
- }
+#container {
+  color: white;
+  margin: 0 auto;
+  margin-top: 8vh;
+  height: fit-content;
+  width: fit-content;
+  min-width: 35vw;
+  background-color: rgba(44, 72, 230, 0.932);
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(13, 27, 53, 0.5);
+}
 
- .showing {
-   display: block;
- }
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- @keyframes fadeIn {
-   from {
-     opacity: 0;
-   }
-   to {
-     opacity: 1;
-   }
- }
+.headerSection #title {
+  padding: 4vh 0 2vh 0;
+  font-weight: 200;
+  font-size: 23px;
+}
 
- .bgImage {
-   position: absolute;
-   top: -10px;
-   left: -10px;
-   width: 120%;
+.clock {
+  padding-bottom: 2vh;
+}
+.clock h1 {
+  font-weight: 100;
+  font-size: 20px;
+}
 
-   z-index: -10;
-   animation: fadeIn 1s linear;
- }
+.weather {
+  padding-bottom: 3vh;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.nameForm {
+  padding-bottom: 1vh;
+  display: none;
+}
+
+.toDoForm {
+  padding-bottom: 5vh;
+}
+
+.toDoForm input,
+.nameForm input {
+  width: 230px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 15px;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: 1px solid #ffffff;
+  background-color: unset;
+  margin-top: 10px;
+  padding: 0px 5px 5px 0px;
+}
+
+.toDoForm input:focus,
+.nameForm input:focus {
+  outline: none;
+}
+
+.toDoForm input:focus::-webkit-input-placeholder,
+.nameForm input:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+.toDoForm input:focus:-moz-placeholder,
+.nameForm input:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: transparent;
+}
+.toDoForm input:focus::-moz-placeholder,
+.nameForm input:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: transparent;
+}
+.toDoForm input:focus:-ms-input-placeholder,
+.nameForm input:focus:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+.toDoForm input::placeholder,
+.nameForm input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.subSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding-bottom: 3vh;
+}
+
+.subSection .toDoFirstSection,
+.toDoSecondSection {
+  width: 50%;
+  padding: 0 3% 0 3%;
+}
+
+.subSection .toDoFirstSection h1,
+.subSection .toDoSecondSection h1 {
+  font-weight: 100;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.toDoFirstSection ul,
+.toDoSecondSection ul {
+  font-weight: 100;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+#container button {
+  all: unset;
+  cursor: pointer;
+  background-color: rgba(106, 135, 214, 0.815);
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 200;
+  position: relative;
+  margin-right: 3px;
+  left: 3px;
+  top: -3px;
+  box-shadow: 0 1px 2px rgba(45, 45, 71, 0.39);
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 110%;
+  z-index: -10;
+  animation: fadeIn 1s linear;
+}
